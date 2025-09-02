@@ -1,16 +1,17 @@
 import React from 'react';
-import { Button, View } from 'react-native';
+import { Button, View, Text, Pressable } from 'react-native';
 
 import { styles } from './BatButtonStyles';
 
 export function BatButton() {
   return (
-    <View style={styles.container}>
-        <Button 
-            accessibilityLabel='click em mim'
-            title='CLICK AQUI'
-            onPress={()=> {console.log('ola')}}
-        />
+    <View>
+        <Pressable style={styles.button}>
+            <Text style={styles.text}>GENERATE</Text>
+        </Pressable>
+        <Pressable style={styles.button}>
+            <Text style={styles.text}>⚡COPY</Text>
+        </Pressable>
     </View>
   );
 }
