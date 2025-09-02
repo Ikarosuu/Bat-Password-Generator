@@ -6,11 +6,11 @@ import { BatLogo } from '../components/BatLogo/BatLogo';
 
 export default function Home(){
     return(
-        <View style={styles.container}>
-            <View>
+        <View style={styles.appContainer}>
+            <View style={styles.logoContainer}>
                 <BatLogo/>
             </View>
-            
+
             <Text>Open up App.tsx to start working on your app!</Text>
             <StatusBar style="auto" />
         </View>
